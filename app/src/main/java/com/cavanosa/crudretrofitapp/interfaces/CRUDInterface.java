@@ -15,18 +15,18 @@ import retrofit2.http.Path;
 
 public interface CRUDInterface {
 
-    @GET("product")
+    @GET("products")
     Call<List<Product>> getAll();
 
-    @GET("product/{id}")
+    @GET("products/{id}")
     Call<Product> getOne(@Path("id") int id);
 
-    @POST("product")
+    @POST("products")
     Call<Product> create(@Body ProductDto dto);
 
-    @PUT("product/{id}")
+    @PUT("products/{id}")
     Call<Product> edit(@Path("id") int id, @Body ProductDto dto);
 
-    @DELETE("product/{id}")
+    @DELETE("products/{id}")
     Call<Product> delete(@Path("id") int id);
 }

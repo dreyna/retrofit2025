@@ -1,5 +1,5 @@
 package com.cavanosa.crudretrofitapp.utils;
 
 public class Constants {
-    public static final String BASE_URL = "http://192.168.1.40:8080/";
+    public static final String BASE_URL = "http://172.17.26.1:9090/api/v1/";
 }
