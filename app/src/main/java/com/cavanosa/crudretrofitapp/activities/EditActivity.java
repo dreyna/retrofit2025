@@ -40,7 +40,6 @@ public class EditActivity extends AppCompatActivity {
         setContentView(R.layout.activity_edit);
         Intent detailIntent = getIntent();
         product = (Product) detailIntent.getSerializableExtra("product");
-        //Log.i("prod: ", product.toString());
         nameText = findViewById(R.id.nameText);
         priceText = findViewById(R.id.priceText);
         nameText.setText(product.getName());
